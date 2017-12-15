@@ -1,0 +1,74 @@
+<!DOCTYPE html5>
+<!--Trebuchet MS-->
+<html>
+<head>
+	<title>Profile Settings</title>
+	<link rel="stylesheet" href="../css/style1.css">
+	<script src="../js/ProfileSettingsValidations.js"></script>
+</head>
+<body>
+	<section>
+	<header>Webname</header>
+	<button class="home homebtn" onclick="location.href='homepage.html'">Home</button>
+	<br>
+	</section>
+	<section background-color="blue" style="text-align:center">
+		<img src="../images/car1.jpg" style="width:200px;height:200px;" alt="Your Picture" id="dp">
+		<button class="textbox btn" type="button" onclick="">Change</button>
+	</section>
+	<section>
+		<form name="form1">
+			<span>Name</span>
+			<input class="textbox" type="text" placeholder="Your Name" id="name" onblur="checkName();">
+			<span id="nameError" class="invalidInput"></span>
+			<br>
+			<span>Gender</span>
+			<input type="radio" name="gender" value="Female" id="mgender">Female
+			<input type="radio" name="gender" value="Male" id="fgender">Male
+			<span id="genderError" class="invalidInput"></span>
+			<br>
+			<section>
+				<span align="left">Date of Birth</span>
+				<!--<input class="textbox" type="" max="2017-12-01"  min="1850-01-01" id="bdate" placeholder="yyyy-mm-dd">-->
+				<span>
+					<input type="number" class="textbox" style="width:100px;" name="day" min="1" max="31" placeholder="15">
+				</span>
+				<span>
+					<select class="textbox" style="width:100px;" name="month">
+						<option value="jan">January</option>
+						<option value="feb">February</option>
+						<option value="mar">March</option>
+						<option value="apr">April</option>
+						<option value="may">May</option>
+						<option value="jun">June</option>
+						<option value="jul">July</option>
+						<option value="aug">August</option>
+						<option value="sep">September</option>
+						<option value="oct">October</option>
+						<option value="nov">November</option>
+						<option value="dec">December</option>
+				</span>
+				<span>
+					<input type="number" class="textbox" style="width:100px;" name="year" min="1900" max="2018"placeholder="1990">
+				</span>
+				<span id="dobError" class="invalidInput"></span>
+			</section>
+			<span align="left">Age</span>
+			<input class="textbox" type="number" id="age" min="1" max="120" onblur="checkAge();checkGender();" placeholder="Your Age">
+			<span id="ageError" class="invalidInput"></span>
+			<br>
+			<span  align="left">City</span>
+			<input class="textbox" type="text" id= "city" onblur="checkCity();" placeholder="Your City">
+			<span id="cityError" class="invalidInput"></span>
+			<br>
+			<span>Nationality</span>
+			<input class="textbox" type="text" id="country" onblur="checkCountry();" placeholder="Your Country">
+			<span id="countryError" class="invalidInput"></span>
+			<br>
+			<button class="textbox btn" onclick="location.href='profileSettings.html'">Cancel</button>
+			<button type="submit" class="textbox btn" value="Save" onclick='checkForm();'>Save</button>
+			
+		</form>
+	</section>
+</body>
+</html>
