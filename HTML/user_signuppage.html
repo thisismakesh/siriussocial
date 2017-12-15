@@ -1,35 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="../CSS/user_signuppage_stylesheet.css">
-<script src="../JAVASCRIPT/user_signuppage_script.js"> </script>
+<link rel="stylesheet" type="text/css" href="../css/style1.css">
+<script src="../js/user_signuppage_script.js"> </script>
 <body>
-	<h1 align="right" style="color:white;font-family: Trebuchet MS;font-size: 250%;background-color:red;">SOCSITE</h1>
-	<h2 align="center" style="color:black;font-family: Trebuchet MS;font-size: 250%;">SIGN UP</h2>
-		<div class="container1">
-		  <form action="#" style="border:5px solid red; width:500px; height:320px; padding:10px; margin:auto; background-color:white;">
-		  <div class="container">
-			<label>
-			<b>Email</b><br>
-			<input type="email" id="email" placeholder="Enter Email" name="email" required>
-			<br>
-			</label>
-			<label>
-			<b>UserName</b><br>
-			<input type="text" id="usrname" placeholder="Enter username" name="usrname" required>
-			<br>
-			</label>
-			<label><b>Password</b></label><br>
-			<input type="password" id="psw" placeholder="Enter Password" name="psw" required>
-			<br>
-			<label><b>Repeat Password</b></label><br>
-			<input type="password" id="psw-repeat" placeholder="Repeat Password" name="psw-repeat"  required>
-		  </div>
-		</div>
-		<div class="clearfix">
-		  <button onclick="location.href='main_home_page.html'" class="cancelbtn">Cancel</button>
-		  <button type="submit" class="signupbtn" onclick='check();' onsubmit=>Sign Up</button>
-		</div>
+	<header align="right" style="color:white;font-family: Trebuchet MS;font-size: 250%;background-color:red;">SOCSITE</header>
+	<p align="center" style="color:black;font-family: Trebuchet MS;font-size: 250%;">SIGN UP</p>
+		<form action="#" style="border:5px solid red; width:350px; border-radius:5px; height:320px; padding:10px; margin:auto; background-color:white;">
+			<section>
+				<span><b>Email</b></span><span class="textbox" id="emailval" style="color:red;font-size:14px;background-color:white;"></span><br>
+				<input type="email" id="email" placeholder="Enter Email" class="textbox" onblur='check();'>
+				<br>
+				<span><b>UserName</b></span><span class="textbox" id="userval" style="color:red;font-size:14px;background-color:white;"></span><br>
+				<input type="text" id="usrname" placeholder="Enter username" class="textbox" onblur='checkuser();'>
+				<br>
+				<span><b>Password</b></span><span class="textbox" id="pswval" style="color:red;font-size:14px;background-color:white;"></span><br>
+				<input type="password" id="psw" placeholder="Enter Password" class="textbox" onblur='checkpsw();'>
+				<br>
+				<span><b>Repeat Password</b></span><span class="textbox" id="psw-repeatval" style="color:red;font-size:14px;background-color:white;"></span><br>
+				<input type="password" id="psw-repeat" placeholder="Repeat Password" class="textbox" onblur="checkpswr();">
+				<br>
+				<span class="textbox" id="response" style="color:red;font-size:14px;background-color:white;"></span><br>
+			</section>
+		</form>  
+		<section class="clearfix">
+		  <button onclick="location.href='main_home_page.html'" class="textbox btn" style="text-align:center; position:relative; right:20%; left:40%;">Cancel</button>
+		  <button type="submit" class="textbox btn" onclick='checkpswr();' style="text-align:center; position:relative; right:20%; left:40%;">Sign Up</button>
+		</section>
 	</form>
 </body>
 </head>
