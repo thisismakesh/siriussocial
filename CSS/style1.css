@@ -27,8 +27,8 @@ header{ height:70px;background-color:red; }
 			width:100px;
 			height:40px;
 			font-size:20px;
-			color:white;
 			position:absolute;
+			color:white;
 			top:25px;
 			left:10px;
 		}
@@ -37,7 +37,6 @@ header{ height:70px;background-color:red; }
 			width:100px;
 			height:30px;
 			font-size:20px;
-			text-align:center;
 		}
 		.btn:hover{
 			border-radius:5px;
@@ -56,11 +55,14 @@ header{ height:70px;background-color:red; }
 			border:red;
 			color:Red;
 		}
-		.invalidInput{
-			color:red;
-			font-family:Trebuchet MS;
-			font-size:15px;
+		.bg {
+			background-image: url('../videos/network.gif');
+			height: 100%; 
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
 		}
+<<<<<<< HEAD
 		.clear{
 				clear:both;
 		}
@@ -78,4 +80,12 @@ header{ height:70px;background-color:red; }
 			border-radius:5px;
 			font-size:20px;
 			text-align:center;
+=======
+		.bg_login{
+			background-image: url('../images/login.png');
+			height:650px;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+>>>>>>> 9ed1e94dbf6d8a33f2dd655b08d98c6556c7933e
 		}
