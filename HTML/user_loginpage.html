@@ -1,29 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html style="height: 100%; margin: 0;">
 <link rel="stylesheet" type="text/css" href="../css/style1.css">
 <script src="../js/user_loginpage_script.js"> </script>
-<body>
-	<header align="right" style="color:white;font-family: Trebuchet MS;font-size: 250%;background-color:red;">SOCSITE</header>
-	<p align="center" style="color:black;font-family: Trebuchet MS;font-size: 250%;">LOG IN</p>
-		<section class="container1">
-			<form action="#" style="border:5px solid red; width:350px;border-radius:5px; height:170px; padding:10px; margin:auto; background-color:white;">
-				<section class="container">
-					<label>
-					<b>Email</b><br>
-					<input type="email" placeholder="Enter Email" class="textbox" name="email">
-					<br>
-					</label>
-					<label>
-					<label><b>Password</b></label><br>
-					<input type="password" placeholder="Enter Password" class="textbox" name="psw">
-					<br>
-					<span class="textbox" id="response" style="color:red;font-size:14px;background-color:white;"></span><br>
-				</section>
-			</form>
-		</section>
-		<section class="clearfix">
-			<button onclick="location.href='main_home_page.html'" class="texbox btn" style="border:0px;text-align:center; position:relative; right:20%; left:40%;">Cancel</button>
-			<button type="button" class="textbox btn" onclick='check();' style="text-align:center;border:0px;position:relative; right:20%; left:40%;">Log In</button>
-		</section>	
+<body style="height: 100%; margin: 0;">
+	<section class="bg_login">
+		<header align="right" style="color:white;font-family: Trebuchet MS;font-size: 250%;background-color:red;">SOCSITE</header>
+		<p align="center" style="color:red;font-family: Trebuchet MS;font-size: 250%;">LOG IN</p>
+			<section class="container1">
+				<form action="#" style="border:5px solid red; width:350px;border-radius:5px; height:170px; padding:10px; margin:auto; background-color:white;">
+					<section class="container">
+						<label>
+						<b>Email</b><br>
+						<input type="email" placeholder="Enter Email" class="textbox" name="email">
+						<br>
+						</label>
+						<label>
+						<label><b>Password</b></label><br>
+						<input type="password" placeholder="Enter Password" class="textbox" name="psw">
+						<br>
+						<span class="textbox" id="response" style="color:red;font-size:14px;background-color:white;"></span><br>
+					</section>
+				</form>
+			</section>
+			<section class="clearfix">
+				<button onclick="location.href='main_home_page.html'" class="texbox btn" style="border:0px;text-align:center; position:relative; right:20%; left:40%;">Cancel</button>
+				<button type="button" class="textbox btn" onclick='check();' style="text-align:center;border:0px;position:relative; right:20%; left:40%;">Log In</button>
+			</section>	
+	</section>
 </body>
 </html>
