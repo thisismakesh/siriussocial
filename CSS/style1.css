@@ -62,7 +62,6 @@ header{ height:70px;background-color:red; }
 			background-repeat: no-repeat;
 			background-size: cover;
 		}
-<<<<<<< HEAD
 		.clear{
 				clear:both;
 		}
@@ -80,12 +79,11 @@ header{ height:70px;background-color:red; }
 			border-radius:5px;
 			font-size:20px;
 			text-align:center;
-=======
+		}
 		.bg_login{
 			background-image: url('../images/login.png');
 			height:650px;
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
->>>>>>> 9ed1e94dbf6d8a33f2dd655b08d98c6556c7933e
 		}
