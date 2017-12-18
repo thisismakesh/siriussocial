@@ -59,5 +59,4 @@ var checkpswr = function(){
 	else{
 		document.getElementById("psw-repeatval").innerHTML="";
 	}
-	document.getElementById("response").innerHTML="Your response has been recorded";
 }
