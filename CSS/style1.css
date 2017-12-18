@@ -64,3 +64,18 @@ header{ height:70px;background-color:red; }
 		.clear{
 				clear:both;
 		}
+		.posts{
+			width:700px;
+			height:500px;
+			border:2px;
+			border-radius:3px;
+			box-shadow:3px 3px 3px 3px lightgray;
+			position:relative;
+			top:20px;
+			left:70px;
+		}
+		.likebtn{
+			border-radius:5px;
+			font-size:20px;
+			text-align:center;
+		}
