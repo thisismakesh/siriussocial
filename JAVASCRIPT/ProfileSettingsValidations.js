@@ -63,3 +63,21 @@ function checkCountry(){
 		//alert("Changes Saved");
 	}	
 }
+function likePost(){
+	//alert("function called");
+	if(document.getElementById("likebutton").attributes[1].value.localeCompare("../IMAGES/like1.png")==0){
+		
+		document.getElementById("likebutton").src ="../IMAGES/like2.png";
+	}
+	else {
+		document.getElementById("likebutton").src ="../IMAGES/like1.png";
+	}
+}
+function changedp(){
+	document.getElementById("changemydp").innerHTML = 
+	'<form action="/action_page.php"><input type="file" name="dp" accept="image/*"><section id="dochange"><button type="submit" class="textbox btn" onclick="">Change</section></form>';
+}
+function getpostimage(){
+	document.getElementById("postnow").innerHTML = 
+	'<form action="/action_page.php"><input type="file" name="mypost" accept="image/*"><section id="dopost"><button type="submit" class="textbox btn" onclick="">Post</section></form>';
+}

@@ -4,6 +4,7 @@
 <head>
 	<title>Webname</title>
 	<link rel="stylesheet" type="text/css" href="../css/style1.css">
+	<script src="../JAVASCRIPT/ProfileSettingsValidations.js"></script>
 </head>
 <body>
 	<section>
@@ -14,22 +15,24 @@
 		</button>
 		<br>
 	</section>
-	<section>
-		<button class="textbox btn">Post</button> 
+	<section id="postnow">
+		<button class="textbox btn" onclick="getpostimage();">Post</button> 
 	</section>
 	<!--<section  style="background-color:rgb(300,300,300);width:900px;height:800px;border:5px solid red;border-radius:15px;float:left;">
 	</section>-->
 	<section>
 		<article class="posts">
-			<button class="likebtn" style="background:white;position:absolute;bottom:0px;border:0px">
-				<img src="../IMAGES/like1.png" align="centre" style="width:30px;height:30px" onclick>
+			<p style="font-size:20px;">PostedByUser</p>
+			<p id="demo"></p>
+			<script>var d = new Date("25 Mar 2015").toDateString();document.getElementById("demo").innerHTML = d;</script>
+			<button class="likebtn"  style="background:white;position:absolute;bottom:0px;border:0px" onclick="likePost();">
+				<img  id="likebutton" src="../IMAGES/like1.png" style="width:30px;height:30px;position:relative;left:0px" >
 			</button>
 		</article>
 	</section>
-	<section  style="background-color:rgb(300,300,300);width:300px;height:800px;border:4px solid red;border-radius:15px;position:absolute;top:70px;right:5px;">
-		<header style="font-size:30px">Friends</header>
-		
-			
+	<section>
+		<header class="friendstab" style="font-size:30px">
+<p style="color:red;margin:0px;">Friends</P></header>
 	</section>
 </body>
 </html>
