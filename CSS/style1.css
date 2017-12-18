@@ -56,7 +56,7 @@ header{ height:70px;background-color:red; }
 			color:Red;
 		}
 		.bg {
-			background-image: url('../videos/network.gif');
+			background-image: url('../VIDEOS/network.gif');
 			height: 100%; 
 			background-position: center;
 			background-repeat: no-repeat;
@@ -81,7 +81,7 @@ header{ height:70px;background-color:red; }
 			text-align:center;
 		}
 		.bg_login{
-			background-image: url('../images/login.png');
+			background-image: url('../IMAGES/login.png');
 			height:650px;
 			background-position: center;
 			background-repeat: no-repeat;
