@@ -1,7 +1,6 @@
 header{ height:70px;background-color:red; }
 		body{ font-family:Trebuchet MS;}
 		header{ 
-			text-align:right;
 			font-family:Trebuchet MS;
 			color:white;font-size:40px;
 			height:40px;
@@ -10,7 +9,7 @@ header{ height:70px;background-color:red; }
 		.textbox{
 			border:5px;border-radius:5px;
 			margin:10px;padding:5px;
-			width:300px;height:25px;
+			width:300px;height:30px;
 			font-size:10px;
 			background-color:rgb(240, 240, 240);
 		}
@@ -43,7 +42,23 @@ header{ height:70px;background-color:red; }
 			background-color:white;
 			color:Red;
 		}
-		.bg {
+		.logoutbtn{
+			border:red;border-radius:5px;
+			background-color:red;
+			width:100px;height:40px;
+			font-size:20px;color:white;
+		}
+		.logoutbtn:hover{
+			border:red;border-radius:5px;
+			background-color:white;
+			color:Red;
+		}
+		.likebtn{
+			border-radius:5px;
+			font-size:20px;
+			text-align:center;
+		}
+		.bg{
 			background-image: url('../VIDEOS/network.gif');
 			height: 100%; 
 			background-position: center;
@@ -64,11 +79,6 @@ header{ height:70px;background-color:red; }
 			box-shadow:3px 3px 3px 3px lightgray;
 			position:relative;
 			top:20px;left:70px;
-		}
-		.likebtn{
-			border-radius:5px;
-			font-size:20px;
-			text-align:center;
 		}
 		.bg_login{
 			background-image: url('../IMAGES/login.png');

@@ -1,5 +1,5 @@
 <!DOCTYPE html5>
-<!--Trebuchet MS     class="clear"-->
+<!--Trebuchet MS -->
 <html>
 <head>
 	<title>Webname</title>
@@ -8,18 +8,25 @@
 </head>
 <body>
 	<section>
-		<header>Webname</header>
-		<button class="home homebtn" style="width:200px;" type="button" onclick="location.href='profileSettings.html'">
-			<img src="../IMAGES/dpsample.jpg" width="40px" height="30px" align="left" >
-			ProfileName
-		</button>
+		<header>
+			<span style="position:absolute;right:10px"> Webname</span>
+			<span>
+				<input type="text" class="textbox" style="width:700px;height:40px;position:absolute;left:220px;top:10px" placeholder="Search for people here" id="searchtext">
+			</span>
+			<span>
+				<button type="button" id="logoutbutton" class="logoutbtn" style="position:absolute;right:200px;top:20px" onclick="">Log Out</button>
+			</span>
+		</header>
+		<span>
+			<button class="home homebtn" style="width:200px;" type="button" onclick="location.href='profileSettings.html'">
+				<img src="../IMAGES/dpsample.jpg" width="40px" height="30px" align="left"><span id="profilename">ProfileName</span>
+			</button>
+		</span>
 		<br>
 	</section>
 	<section id="postnow">
-		<button class="textbox btn" onclick="getpostimage();">Post</button> 
+		<button class="textbox btn" onclick="getPostImage();">Post</button> 
 	</section>
-	<!--<section  style="background-color:rgb(300,300,300);width:900px;height:800px;border:5px solid red;border-radius:15px;float:left;">
-	</section>-->
 	<section>
 		<article class="posts">
 			<p style="font-size:20px;">PostedByUser</p>
@@ -32,7 +39,7 @@
 	</section>
 	<section>
 		<header class="friendstab" style="font-size:30px">
-<p style="color:red;margin:0px;">Friends</P></header>
+<p style="text-align:left;color:black;margin:0px;">Friends</P></header>
 	</section>
 </body>
 </html>
