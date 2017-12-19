@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html style="height: 100%; margin: 0;">
+<head>
+<link rel="stylesheet" type="text/css" href="../css/style1.css">
+<script src="../JAVASCRIPT/user_loginpage_script.js"> </script>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+</head>
+<body style="height: 100%; margin: 0;">
+	<section class="bg_login">
+		<header align="right" style="color:white;font-family: Trebuchet MS;font-size: 250%;background-color:red;">SOCSITE</header>
+		<p align="center" style="color:red;font-family: Trebuchet MS;font-size: 250%;">LOG IN</p>
+			<section class="container1">
+				<form action="#" style="border:5px solid red; width:350px;border-radius:5px; height:170px; padding:10px; margin:auto; background-color:white;">
+					<section class="container">
+						<label>
+						<b>Email</b><br>
+						<input id="username" type="email" placeholder="Enter Email" class="textbox" name="email">
+						<br>
+						</label>
+						<label>
+						<label><b>Password</b></label><br>
+						<input id="password" type="password" placeholder="Enter Password" class="textbox" name="psw">
+						<br>
+						<span class="textbox" id="response" style="color:red;font-size:14px;background-color:white;"></span><br>
+					</section>
+				</form>
+			</section>
+			<section class="clearfix">
+				<button onclick="location.href='main_home_page.html'" class="texbox btn" style="border:0px;text-align:center; position:relative; right:20%; left:40%;">Cancel</button>
+				<button id="loginButton" type="button" class="textbox btn" onclick='check();' style="text-align:center;border:0px;position:relative; right:20%; left:40%;">Log In</button>
+			</section>	
+	</section>
+</body>
+</html>

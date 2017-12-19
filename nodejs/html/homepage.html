@@ -1,0 +1,39 @@
+<!DOCTYPE html5>
+<!--Trebuchet MS     class="clear"-->
+<html>
+<head>
+	<title>Webname</title>
+	<link rel="stylesheet" type="text/css" href="../css/style1.css">
+	<script src="../JAVASCRIPT/ProfileSettingsValidations.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<section>
+		<header>Webname</header>
+		<button class="home homebtn" style="width:200px;" type="button" onclick="location.href='profileSettings.html'">
+			<img src="../IMAGES/dpsample.jpg" width="40px" height="30px" align="left" >
+			ProfileName
+		</button>
+		<br>
+	</section>
+	<section id="postnow">
+		<button class="textbox btn" onclick="getpostimage();">Post</button> 
+	</section>
+	<!--<section  style="background-color:rgb(300,300,300);width:900px;height:800px;border:5px solid red;border-radius:15px;float:left;">
+	</section>-->
+	<section>
+		<article class="posts">
+			<p style="font-size:20px;">PostedByUser</p>
+			<p id="demo"></p>
+			<script>var d = new Date("25 Mar 2015").toDateString();document.getElementById("demo").innerHTML = d;</script>
+			<button class="likebtn"  style="background:white;position:absolute;bottom:0px;border:0px" onclick="likePost();">
+				<img  id="likebutton" src="../IMAGES/like1.png" style="width:30px;height:30px;position:relative;left:0px" >
+			</button>
+		</article>
+	</section>
+	<section>
+		<header class="friendstab" style="font-size:30px">
+<p style="color:red;margin:0px;">Friends</P></header>
+	</section>
+</body>
+</html>
