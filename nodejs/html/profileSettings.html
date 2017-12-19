@@ -8,14 +8,16 @@
 </head>
 <body>
 	<section>
-	<header>Webname</header>
+	<header>
+		<span style="position:absolute;right:10px"> Webname</span>
+	</header>
 	<button class="home homebtn" onclick="location.href='homepage.html'">Home</button>
 	<br>
 	</section>
 	<section style="text-align:center" >
 		<img src="../IMAGES/car1.jpg" style="width:200px;height:200px;" alt="Your Picture" id="dp">
 		<section id="changemydp">
-			<button class="textbox btn" type="button" onclick="changedp();">Change</button>
+			<button class="textbox btn" type="button" onclick="changeDp();">Change</button>
 		</section>
 	</section>
 	<section>
@@ -25,33 +27,27 @@
 			<span id="nameError" class="invalidInput"></span>
 			<br>
 			<span>Gender</span>
-			<input type="radio" name="gender" value="Female" id="mgender">Female
-			<input type="radio" name="gender" value="Male" id="fgender">Male
+				<select class="textbox" style="width:100px" id="gender">
+					<option value="Male">Male</option>
+					<option value="Female">Female</option>
+				</select>
 			<span id="genderError" class="invalidInput"></span>
 			<br>
 			<section>
 				<span align="left">Date of Birth</span>
 				<!--<input class="textbox" type="" max="2017-12-01"  min="1850-01-01" id="bdate" placeholder="yyyy-mm-dd">-->
 				<span>
-					<input type="number" class="textbox" style="width:100px;" name="day" min="1" max="31" placeholder="15">
+					<input type="number" class="textbox" style="width:100px;" min="1" max="31" placeholder="15" id="dobday">
 				</span>
 				<span>
-					<select class="textbox" style="width:100px;" name="month">
-						<option value="jan">January</option>
-						<option value="feb">February</option>
-						<option value="mar">March</option>
-						<option value="apr">April</option>
-						<option value="may">May</option>
-						<option value="jun">June</option>
-						<option value="jul">July</option>
-						<option value="aug">August</option>
-						<option value="sep">September</option>
-						<option value="oct">October</option>
-						<option value="nov">November</option>
-						<option value="dec">December</option>
+					<select class="textbox" style="width:100px;" id="dobmonth">
+						<option value="Jan">January</option><option value="Feb">February</option><option value="Mar">March</option>
+						<option value="Apr">April</option><option value="May">May</option><option value="Jun">June</option>
+						<option value="Jul">July</option><option value="Aug">August</option><option value="Sep">September</option>
+						<option value="Oct">October</option><option value="Nov">November</option><option value="Dec">December</option>
 				</span>
 				<span>
-					<input type="number" class="textbox" style="width:100px;" name="year" min="1900" max="2018"placeholder="1990">
+					<input type="number" class="textbox" style="width:100px;" min="1900" max="2018" placeholder="1990" id="dobyear">
 				</span>
 				<span id="dobError" class="invalidInput"></span>
 			</section>
@@ -60,11 +56,11 @@
 			<span id="ageError" class="invalidInput"></span>
 			<br>
 			<span  align="left">City</span>
-			<input class="textbox" type="text" id= "city" onblur="checkCity();" placeholder="Your City">
+			<input class="textbox" type="text" id= "city" placeholder="Your City">
 			<span id="cityError" class="invalidInput"></span>
 			<br>
 			<span>Nationality</span>
-			<input class="textbox" type="text" id="country" onblur="checkCountry();" placeholder="Your Country">
+			<input class="textbox" type="text" id="country" onblur="checkPlace();" placeholder="Your Country">
 			<span id="countryError" class="invalidInput"></span>
 			<br>
 			<button class="textbox btn" onclick="location.href='profileSettings.html'">Cancel</button>

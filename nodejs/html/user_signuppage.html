@@ -2,15 +2,13 @@
 <html style="height: 100%; margin: 0;">
 <head>
 <link rel="stylesheet" type="text/css" href="../css/style1.css">
-<script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="../JAVASCRIPT/user_signuppage_script.js"> </script>
-<script src="../JAVASCRIPT/signupform_ajax.js"> </script>
+<script src="../node_learning/user.js"> </script>
 <body style="height: 100%; margin: 0;">
 	<section class="bg_login">
 		<header align="right" style="color:white;font-family: Trebuchet MS;font-size: 250%;background-color:red;">SOCSITE</header>
 		<p align="center" style="color:red;font-family: Trebuchet MS;font-size: 250%;">SIGN UP</p>
-			<form id="signup_form" method="post" style="border:5px solid red; width:350px; border-radius:10px; height:320px; padding:10px; margin:auto; background-color:white;">
+			<form action='user_sinup(this.form)' style="border:5px solid red; width:350px; border-radius:10px; height:320px; padding:10px; margin:auto; background-color:white;">
 				<section>
 					<span><b>Email</b></span><span class="textbox" id="emailval" style="color:red;font-size:14px;background-color:white;"></span><br>
 					<input type="email" id="email" placeholder="Enter Email" class="textbox" onblur='check();'>
@@ -26,12 +24,12 @@
 					<br>
 					<span class="textbox" id="response" style="color:red;font-size:14px;background-color:white;"></span><br>
 				</section>
-				<section>
-					<br>
-					<button onclick="location.href='main_home_page.html'" class="textbox btn" style="text-align:center; position:relative; left:10%;">Cancel</button>
-					<button type="submit" value="submit" onclick='javascript:signup()' class="textbox btn" style="text-align:center; position:relative; left:10%; ">Sign Up</button>
-				</section>
-			</form>
+			</form>  
+			<section class="clearfix">
+			  <button onclick="location.href='main_home_page.html'" class="textbox btn" style="text-align:center; position:relative; right:20%; left:40%;">Cancel</button>
+			  <button type="submit" value="submit" class="textbox btn" onclick='checkpswr();' style="text-align:center; position:relative; right:20%; left:40%;">Sign Up</button>
+			</section>
+		</form>
 	</section>
 </body>
 </head>
