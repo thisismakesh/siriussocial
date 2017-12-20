@@ -17,8 +17,8 @@ function signup(){
     },
     data: JSON.stringify(data),
 	success: function (data) {
-		console.log("success");
-				location.href = "../html/homepage.html";	
+		//console.log("success");
+			window.location = "../html/user_loginpage.html";	
 	},
 	error: function(data) {
 		console.log("failure");
