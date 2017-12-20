@@ -1,4 +1,3 @@
-
 var f=0;
 function checkForm(){
 	console.log("checkform called");
