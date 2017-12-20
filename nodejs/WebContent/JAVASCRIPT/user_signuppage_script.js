@@ -33,7 +33,7 @@ var checkuser = function(){
 var checkpsw = function(){
 	var passw=  /^[A-Za-z]\w{7,14}$/; 
 	if(document.getElementById('psw').value.length <8){
-		document.getElementById("pswval").innerHTML="Password be 10 characters";
+		document.getElementById("pswval").innerHTML="Password be 8 characters";
 		//exit()
 	}
 	else{

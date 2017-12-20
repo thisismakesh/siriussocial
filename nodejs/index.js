@@ -1,4 +1,5 @@
-var signupform= require('./modules/signupform_db.js');
+var fo_rm= require('./modules/signupform_db.js');
+var fo_rm2= require('./modules/loginform_db.js');
 var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
@@ -28,20 +29,41 @@ app.get('/signup', function(req, res) {
         root: __dirname
     });
 });
+app.post('/LogInUser', function (req, res) {
+   //fetch user details
+   //validate data
+   //store data to DB
+   //send response
+   //console.log("inside-----"+req);
+   console.log("loginuser:inside signup"+JSON.stringify(req.body));
+   var email = req.body.email;
+   var password = req.body.password;
+   var response = {"email":email,"password":password}
+   fo_rm2.userslogin_db(response, res,function(result, response1){
+	   console.log("hey"+result);
+		if(result){
+			response1.send({"status":"success"});
+		}
+		else {
+			response1.send({"status":"error"});
+		}
+	   
+   });
+	
+})
 app.post('/SignUpUser', function (req, res) {
    //fetch user details
    //validate data
    //store data to DB
    //send response
-   
-   console.log("inside-----"+req);
-   console.log("inside signup"+JSON.stringify(req.body));
+   //console.log("inside-----"+req);
+   // console.log("inside signup"+JSON.stringify(req.body));
    var email = req.body.email;
    var username = req.body.username;
    var password = req.body.password;
    var response = {"username":username,"password":password,"email":email}
-   signupform.usersignup_db(response, res,function(result, response1){
-	   console.log("hey"+result);
+   fo_rm.usersignup_db(response, res,function(result, response1){
+	   //console.log("hey"+result);
 		if(result){
 			response1.send({"status":"success"});
 		}
