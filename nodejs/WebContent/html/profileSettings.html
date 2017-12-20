@@ -3,8 +3,9 @@
 <html>
 <head>
 	<title>Profile Settings</title>
-	<link rel="stylesheet" href="../CSS/style1.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="../JAVASCRIPT/ProfileSettingsValidations.js"></script>
+	<link rel="stylesheet" href="../CSS/style1.css">
 </head>
 <body>
 	<section>
@@ -64,7 +65,7 @@
 			<span id="countryError" class="invalidInput"></span>
 			<br>
 			<button class="textbox btn" onclick="location.href='profileSettings.html'">Cancel</button>
-			<button type="submit" class="textbox btn" value="Save" onclick='checkForm();'>Save</button>
+			<button type="button" class="textbox btn" value="Save" onclick='javascript:checkForm();'>Save</button>
 			
 		</form>
 	</section>
