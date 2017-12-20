@@ -1,16 +1,40 @@
-/*var day=document.getElementById('day');
-var mon=document.getElementById('month');
-var year=document.getElementById('year');*/
+
 var f=0;
 function checkForm(){
-	checkName();
+	console.log("checkform called");
+	/*checkName();
 	checkGender();
 	checkAge();
-	checkPlace();
+	checkPlace();*/
 	saveSettings();
+}
+function saveSettings() {
+	console.log("saveSettings called");
+	var userdata = {"email":"ajaynba001@gmail.com",//getCookie(),//incomplete
+					"name" : document.getElementById('name').value,
+					"gender" : document.getElementById('gender').value,
+					"dob" : document.getElementById('dobday').value+document.getElementById('dobmonth').value+document.getElementById('dobyear').value,
+					"age" : document.getElementById('age').value,
+					"city" : document.getElementById('city').value,
+					"country" : document.getElementById('country').value };
+	console.log(userdata);
+	$.ajax({
+		url : "http://localhost:8081/saveSettings",
+		headers : { "Content-Type":"application/json"},
+		type : 'POST',
+		data : JSON.stringify(userdata),
+		success : function(userdata){
+			console.log("return to ajax call success"+userdata);//JSON.stringify(userdata)
+		},
+		error:function(userdata){
+			console.log("return to ajax call failure"+JSON.stringify(userdata));//JSON.stringify(userdata)
+		}
+	});
+	//return false;
 }
 function checkName(){
 	//alert("function called");
+	console.log("check name called");
 	var name=document.getElementById('name');
 	if((name.value=="")||(!isNaN(name.value))){
 		f=1;
@@ -47,6 +71,7 @@ function checkAge(){
 	}
 }
 function checkPlace(){
+	console.log("check place");
 	var city=document.getElementById('city');
 	var country=document.getElementById('country');
 	if((city.value=="")||(!isNaN(city.value))){

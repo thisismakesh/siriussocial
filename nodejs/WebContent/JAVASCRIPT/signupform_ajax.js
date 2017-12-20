@@ -1,30 +1,21 @@
 function signup(){
-	console.log("hi");
 	var email = document.getElementById("email").value;
 	var username = document.getElementById("usrname").value;
-	var password_ = document.getElementById("psw").value;
-	data = {"email":email,
-			"username":username,
-			"password":password_};
-			
-	console.log("BEFORE AJAX:"+JSON.stringify(data));
+	var password = document.getElementById("psw").value;
+	data = {"email":email , "username":username , "password":password}
+	//console.log(JSON.stringify(data));
     $.ajax({
-    url: "http://localhost:8080/SignUpUser",
-	type: 'POST',
+    url: 'http://localhost:8081/SignUpUser',
     headers:{ 
-        'Content-Type':'application/json',
-		'Access-Control-Allow-Origin':'*'
+        "Content-Type":"application/json"
     },
-    data: JSON.stringify(data),
-	success: function (data) {
-		console.log("success");
-				location.href = "../html/homepage.html";	
-	},
-	error: function(data) {
-		console.log("failure");
+    data: data,
+	type: 'POST',
+    success: function (data) {
+            // do something with the result
 			
-	}
+        }
     });
-	console.log("Yes");
+	//console.log("Yes");
 	return false;
 }
